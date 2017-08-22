@@ -1,0 +1,25 @@
+package sa.pageClass;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage {
+
+	@FindBy(id="username")
+	WebElement txtUsername;
+	
+	@FindBy(id="password")
+	WebElement txtPassword;
+	
+	@FindBy(id="login")
+	WebElement btnLogin;
+	
+	@FindBy(id="username_span")
+	WebElement emptyUsernameError;
+	
+	public LoginPage(){
+		Base.openBrowser();
+	}
+	
+	
+}

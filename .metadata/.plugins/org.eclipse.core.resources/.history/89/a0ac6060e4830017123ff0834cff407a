@@ -1,0 +1,38 @@
+package sa.pageClass;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class SearchHotelPage {
+
+	@FindBy(id="username_show")
+	WebElement txtUsernameShow;
+	
+	@FindBy(id="location")
+	WebElement selectLocation;
+	
+	@FindBy(id="hotels")
+	WebElement selectHotel;
+	
+	@FindBy(id="room_type")
+	WebElement selectRoomType;
+	
+	@FindBy(id="room_nos")
+	WebElement selectNoOfRooms;
+	
+	@FindBy(id="datepick_in")
+	WebElement txtCheckInDate;
+	
+	@FindBy(id="datepick_out")
+	WebElement txtCheckOutDate;
+	
+	@FindBy(id="adult_room")
+	WebElement selectAdultsPerRoom;
+	
+	@FindBy(id="child_room")
+	WebElement selectChildPerRoom;
+	
+	@FindBy(id="Submit")
+	WebElement btnSubmit;
+	
+}

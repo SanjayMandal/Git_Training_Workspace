@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SeleniumAdvance&apos; to &apos;MSExcel&apos;" description="Rename resource &apos;SeleniumAdvance&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SeleniumAdvance" name="MSExcel" stamp="1502860219406" updateReferences="true"/>
+</session>

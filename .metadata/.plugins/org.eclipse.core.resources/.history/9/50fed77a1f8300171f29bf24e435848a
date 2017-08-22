@@ -1,0 +1,14 @@
+package sa.keywordDriven;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+public class TestRunner {
+
+	@Test
+	void test() throws FileNotFoundException, IOException{
+		ExcelOperations.openExcelForReading("./ExcelSheet/Test.xlsx");
+	}
+}

@@ -1,0 +1,144 @@
+package sa.pageClass;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+public class SearchHotelPage {
+
+	@FindBy(id="username_show")
+	WebElement txtUsernameShow;
+	
+	@FindBy(id="location")
+	WebElement selectLocation;
+	
+	@FindBy(id="hotels")
+	WebElement selectHotel;
+	
+	@FindBy(id="room_type")
+	WebElement selectRoomType;
+	
+	@FindBy(id="room_nos")
+	WebElement selectNoOfRooms;
+	
+	@FindBy(id="datepick_in")
+	WebElement txtCheckInDate;
+	
+	@FindBy(id="datepick_out")
+	WebElement txtCheckOutDate;
+	
+	@FindBy(id="adult_room")
+	WebElement selectAdultsPerRoom;
+	
+	@FindBy(id="child_room")
+	WebElement selectChildPerRoom;
+	
+	@FindBy(id="Submit")
+	WebElement btnSubmit;
+	
+	
+	public SearchHotelPage(){
+		PageFactory.initElements(Base.driver, this);
+		}
+
+
+	public String getTxtUsernameShow() {
+		return txtUsernameShow.getAttribute("value");
+	}
+
+	
+	public String getSelectLocation() {
+		return selectLocation.getAttribute("value");
+	}
+
+
+	public void setSelectLocation(String text) {
+		Select select = new Select(selectLocation);
+		select.selectByValue(text);
+	}
+
+
+	public String getSelectHotel() {
+		return selectHotel.getAttribute("value");
+	}
+
+
+	public void setSelectHotel(String selectHotel) {
+		selectHotel = selectHotel;
+	}
+
+
+	public String getSelectRoomType() {
+		return selectRoomType.getAttribute("value");
+	}
+
+
+	public void setSelectRoomType(String selectRoomType) {
+		selectRoomType = selectRoomType;
+	}
+
+
+	public String getSelectNoOfRooms() {
+		return selectNoOfRooms.getAttribute("value");
+	}
+
+
+	public void setSelectNoOfRooms(String selectNoOfRooms) {
+		selectNoOfRooms = selectNoOfRooms;
+	}
+
+
+	public String getTxtCheckInDate() {
+		return txtCheckInDate.getAttribute("value");
+	}
+
+
+	public void setTxtCheckInDate(String txtCheckInDate) {
+		txtCheckInDate = txtCheckInDate;
+	}
+
+
+	public String getTxtCheckOutDate() {
+		return txtCheckOutDate.getAttribute("value");
+	}
+
+
+	public void setTxtCheckOutDate(String txtCheckOutDate) {
+		txtCheckOutDate = txtCheckOutDate;
+	}
+
+
+	public String getSelectAdultsPerRoom() {
+		return selectAdultsPerRoom.getAttribute("value");
+	}
+
+
+	public void setSelectAdultsPerRoom(String selectAdultsPerRoom) {
+		selectAdultsPerRoom = selectAdultsPerRoom;
+	}
+
+
+	public String getSelectChildPerRoom() {
+		return selectChildPerRoom.getAttribute("value");
+	}
+
+
+	public void setSelectChildPerRoom(String selectChildPerRoom) {
+		selectChildPerRoom = selectChildPerRoom;
+	}
+
+
+	public String getBtnSubmit() {
+		return btnSubmit.getAttribute("value");
+	}
+
+
+	public void setBtnSubmit(String btnSubmit) {
+		btnSubmit = btnSubmit;
+	}
+	
+	
+	
+}

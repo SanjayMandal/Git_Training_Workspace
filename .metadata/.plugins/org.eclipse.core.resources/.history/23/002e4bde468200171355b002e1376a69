@@ -1,0 +1,12 @@
+package sa.excel;
+
+import java.io.IOException;
+
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+
+public class ExcelOperations {
+	
+public static void amin(String args[]) throws InvalidFormatException,IOException{
+	XSSFWorkbook 
+}
+}

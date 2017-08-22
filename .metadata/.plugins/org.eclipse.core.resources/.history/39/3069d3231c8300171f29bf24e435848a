@@ -1,0 +1,24 @@
+package sa.keywordDriven;
+
+import org.openqa.selenium.WebDriver;
+
+public class Action {
+	
+	static WebDriver driver;
+	
+	void initDriver(){
+		
+	}
+
+	void EnterText(String locatorType, String locator, String action, String actionValue){
+		
+	}
+	
+	void click(String locatorType, String locator, String action, String actionValue){
+		
+	}
+	
+	void Select(String locatorType, String locator, String action, String actionValue){
+		
+	}
+}
